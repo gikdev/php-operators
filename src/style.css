@@ -1,0 +1,28 @@
+@font-face {
+  font-family: Vazirmatn;
+  src: url(../assets/Vazirmatn-Regular.ttf);
+  font-weight: 400;
+}
+@font-face {
+  font-family: CascadiaMono;
+  src: url(../assets/CascadiaMono-ExtraLight.ttf);
+  font-weight: 200;
+}
+:root {
+  --pico-font-family-sans-serif: "Vazirmatn", Vazirmatn, system-ui, "Segoe UI", Roboto, Oxygen,
+    Ubuntu, Cantarell, Helvetica, Arial, "Helvetica Neue", sans-serif, var(--pico-font-family-emoji);
+  --pico-font-family-monospace: "CascadiaMono", CascadiaMono, ui-monospace, SFMono-Regular,
+    "SF Mono", Menlo, Consolas, "Liberation Mono", monospace, var(--pico-font-family-emoji);
+}
+code,
+kbd {
+  direction: ltr !important;
+}
+td,
+code,
+kbd {
+  white-space: nowrap;
+}
+[dir="rtl"] nav[aria-label="breadcrumb"] ul li:not(:last-child) a::after {
+  content: "" !important;
+}
